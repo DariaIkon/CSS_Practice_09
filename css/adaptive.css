@@ -204,6 +204,18 @@
     height: 36px;
     fill: #f9d6a6;
   }
+  #header_menu_list.open {
+    display: flex;
+  }
+  #header_close {
+    display: block;
+    width: 24px;
+    height: 24px;
+    fill: #f9d6a6;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
 }
 /* 320 - 374 */
 @media screen and (max-width: 374px) {
