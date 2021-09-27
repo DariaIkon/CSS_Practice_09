@@ -1,0 +1,268 @@
+@font-face {
+  font-family: "Muller_Black";
+  src: url(../fonts/Muller_Black.otf);
+}
+@font-face {
+  font-family: "Muller_Bold";
+  src: url(../fonts/Muller_bold.ttf);
+}
+@font-face {
+  font-family: "Muller_Extra_Bold";
+  src: url(../fonts/Muller_Extra_Bold.ttf);
+}
+@font-face {
+  font-family: "Muller_Regular";
+  src: url(../fonts/Muller_regular.ttf);
+}
+body {
+  margin: 0;
+  font-family: "Muller_Regular", sans-serif;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo span {
+  font-size: 24px;
+  font-family: "Muller_Black";
+  color: rgb(255, 196, 104);
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-left: 8px;
+  width: 80px;
+}
+#burger_menu {
+  display: none;
+}
+#header {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 3px 13.8px 1.2px rgba(152, 152, 152, 0.2);
+}
+#header_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header_menu_list {
+  display: flex;
+  justify-content: space-between;
+  width: 490px;
+  margin: 0 261px 0 248px;
+}
+.header_menu_item {
+  font-size: 16px;
+  color: rgb(164, 107, 0);
+  text-decoration: none;
+}
+
+/*main*/
+
+#main_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 132px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#main_info {
+  max-width: 622px;
+}
+#main_info h1 {
+  margin: 0;
+  font-size: 45px;
+  font-family: "Muller_Extra_Bold", sans-serif;
+  color: rgb(185, 145, 80);
+  line-height: 1.222;
+}
+#main_info h1 span {
+  color: #ffaf18;
+  max-width: 620px;
+}
+#advantages {
+  margin-top: 13px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.advantage {
+  max-width: 292px;
+  display: flex;
+  align-items: center;
+  margin-top: 47px;
+}
+#advantages .advantage_info {
+  margin-left: 16px;
+}
+#advantages .advantage_title {
+  font-size: 16px;
+  font-family: "Muller_Extra_Bold", sans-serif;
+  color: rgb(255, 175, 24);
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+#advantages .advantage_text {
+  font-size: 16px;
+  color: rgb(185, 145, 80);
+  line-height: 1;
+  margin-top: 10px;
+}
+.btn {
+  background-color: rgb(255, 175, 24);
+  text-align: center;
+  padding: 22px;
+  font-size: 16px;
+  font-family: "Muller_Bold", sans-serif;
+  color: rgb(56, 36, 0);
+  text-decoration: none;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+#advantage_button .btn {
+  width: 224px;
+  display: inline-block;
+}
+#advantage_button {
+  margin-top: 60px;
+}
+
+/*products*/
+
+#products_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 161px;
+}
+#products_title {
+  font-size: 35px;
+  font-family: "Muller_Bold", sans-serif;
+  color: rgb(189, 152, 92);
+  text-align: center;
+}
+#products_list {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.products_item {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 3px 13.8px 1.2px rgba(152, 152, 152, 0.2);
+  width: 282px;
+  text-align: center;
+  padding: 27px 20px 15px 20px;
+  box-sizing: border-box;
+  margin-bottom: 24px;
+}
+.products_item_title {
+  font-size: 18px;
+  font-family: "Muller_Bold", sans-serif;
+  font-weight: bold;
+  color: rgb(56, 36, 0);
+  margin-top: 13px;
+}
+.products_item_desription {
+  font-size: 14px;
+  color: rgb(24, 26, 26);
+  line-height: 1.286;
+  margin-top: 17px;
+  height: 49px;
+}
+.products_item .products_item_button.btn {
+  border: 0;
+  outline: 0;
+  margin-top: 15px;
+  padding: 17px;
+  width: 100%;
+}
+.products_item_img {
+  height: 155px;
+}
+
+/*order*/
+
+#order {
+  overflow: hidden;
+}
+#order_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 216px 0 115px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#order_info {
+  max-width: 384px;
+}
+#order_info_title {
+  font-size: 35px;
+  font-family: "Muller_Extra_Bold", sans-serif;
+  font-weight: bold;
+  color: #b99150;
+  line-height: 1.286;
+  width: 367px;
+}
+#order_info_title span {
+  color: rgb(255, 175, 24);
+}
+#order_info_text {
+  font-size: 16px;
+  color: rgb(185, 145, 80);
+  line-height: 1.5;
+  width: 371px;
+  margin-top: 70px;
+}
+#order_form {
+  max-width: 330px;
+}
+#order_form input {
+  border: 1px solid rgb(185, 145, 80);
+  background-color: rgb(255, 255, 255);
+  width: 328px;
+  padding: 23px;
+  font-size: 18px;
+  box-sizing: border-box;
+  outline: 0;
+  margin-bottom: 24px;
+}
+#order_form input::placeholder {
+  color: rgb(203, 168, 110);
+}
+#order_form .btn {
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+}
+#order_img {
+  width: 282px;
+  position: relative;
+}
+#order_img img {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+}
+
+/*footer*/
+
+#footer {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 13.8px 1.2px rgba(152, 152, 152, 0.2);
+}
+#footer_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+}
+#footer_rights {
+  font-size: 12px;
+  color: rgb(186, 179, 179);
+  margin-left: 358px;
+}
