@@ -131,12 +131,16 @@ body {
 #advantage_button {
   margin-top: 60px;
 }
+.hvr-bounce-to-left:before,
+.hvr-shutter-out-vertical:before {
+  background: rgb(185, 145, 80);
+}
 
 /*products*/
 
 #products_container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 80px auto 0 auto;
   padding-top: 161px;
 }
 #products_title {
@@ -268,4 +272,14 @@ body {
   font-size: 12px;
   color: rgb(186, 179, 179);
   margin-left: 358px;
+}
+/*pop-up*/
+
+.white-popup {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
 }

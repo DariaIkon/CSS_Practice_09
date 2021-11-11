@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS_Practice_09</title>
+    <link rel="stylesheet" href="./css/magnific-popup.css">
+    <link rel="stylesheet" href="./css/hover-min.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/adaptive.css">
 </head>
@@ -31,20 +34,20 @@
                         <path
                             d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0" />
                     </svg>
-                <a href="#" class="header_menu_item">
+                <a href="#" class="header_menu_item hvr-shrink">
                     Пиццы
                 </a>
-                <a href="#" class="header_menu_item">
+                <a href="#" class="header_menu_item hvr-shrink">
                     Напитки
                 </a>
-                <a href="#" class="header_menu_item">
+                <a href="#" class="header_menu_item hvr-shrink">
                     Доставка и оплата
                 </a>
-                <a href="#" class="header_menu_item">
+                <a href="#" class="header_menu_item hvr-shrink">
                     Контакты
                 </a>
             </div>
-            <div id="header_basket">
+            <div id="header_basket" class="hvr-grow">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="36px">
                     <image opacity="0.71" x="0px" y="0px" width="40px" height="36px"
                         xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAkCAMAAADM4ogkAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABtlBMVEXrxYXrxoXsxobrxobrxYXsxobrxoXrxYXrxoXrxoXrxYXrxoXrxYXrxoXrxoXrxoXrxoXrxYXrxYXrxYXrxoXrxoXrxYXrxoXrxYXsxobrxYXsxobrxoXrxoXrxoXrxoXrxoXrxoXrxoXrxYXrxoXrxYXrxoXrxoXrxoXrxoXrxoXsxobrxoXrxoXrxoXrxoXrxYXrxoXsxobsxobrxoXrxoXrxYXrxoXrxYXsxobrxoXrxYXrxoXrxobrxoXrxYXrxYXrxoXrxoXrxYXrxoXrxYXrxYXrxoXrxYXrxoXrxoXrxYXrxYXrxYXsxobrxoXrxYXrxoXrxYXsxobrxoXrxYXrxoXrxoXsxobsxobrxYXrxYXrxoXrxoXrxYXrxYXrxoXrxoXrxYXsxobrxoXrxYXsxobrxoXrxoXrxoXrxoXrxoXrxoXrxYXrxoXrxoXrxoXrxYXsxobrxoXrxoXrxYXrxoXrxYXrxoXrxYXrxoXrxYXrxoXrxYXrxoXrxoXrxoXrxYXrxYXrxYXrxYXrxoXrxoXrxYXrxoXrxYXrxYXrxYXrxYXrxYXsxobrxoXrxoX///+RcY9IAAAAkXRSTlMAAAAAT6GpqKiWI7W1eX+GLzVvkjehOrAttTw8PD04Ax+KDrIBpJOUZoV2sQmJVGVEOTSzCyeLHFwStDgFtZmXikZ9tK+flYyCd2thV0tBKm2xgIh+dGleVEg+MyskHRUHQTAEXDk5NRY6bQRVkXWqrK6urq2sYQoMDAqQpAE+dAgvcqUENm6DjxtYqSiZrJ4zDhr2VwAAAAFiS0dEkQ8NvpoAAAAHdElNRQflCRcVDzdvS/WdAAACmklEQVQ4y01Uh19TQQzOHSho4kARvEdFrQvcdaE4EffGvUWlLhxFqVIV995/spdxr32/662k+ZIvyUHzlKktrdOmgwPwcXJxlcnx3skO+AqQP5oBqqAykzvVlh3AzKiGOAu8V01wXrW9d8my4sxum4M414CcVwkky2kS9HaiefH/kF86tpqQXXLdQQdSp4cEU0fj+MQVCw3mB6LmLOvKCllWKOjEi66Frixb0L2Q/7uIw0EiQtsEwqD7eFDBYrZaXIJRJmcWYf4P1tEDIXuxdBnvzGT6VGy6hMvZV79CoYKJSfaCimn0CGO9+YXaMVSkBI/YJqlcqQBBjVFdGQUpfqtWC3E9QbFCvGf8IMKg2iJbo4WxttF384391JmP6zSv640Yymljs2IflbSSZMdvCKqJaWF31bLwSxs3aRY3E2EeNKasUE4sbrG66LMUmMF0knBkbOX6jGNbP9ZZQ0y864+J2M4u+ia3o9UKYGdOC6qbylN/0YoQdiVe0MhLYSjG7rzj9oTGBDI1FofwhANgDeX2YsB6hiPq4L6p+w8cPHT4yNFjx0+czNvSnyIcOn3m7LnzFy5eunzl6rXrN4rDDCeN5J12Ns83EYduyV660BpWm78+4tXtzujUSLm9u3ynVC6VecSvVOq4ey9vTm3M+w2RpKKWq8EHo9rTUuFR/SHlvGhJpN7AR+Aa2tg9TnXzpDI29vTZ2Hh13PKJI2pSVfvI6o+ev5io1WoTtZevxGS0/HoyFpi3J+4NWeHhW3vIoCVo1sPQO+9SCuF9qjP6YE/k5EdFoFD9lN7EuI6OS7FG0WeNEZq+BHkxiL7yhZfnKuoOUJBW/gYpC8VBq4nvoI+b5BH8j5/VSqXaO5yyA+7X70ql8ufvP3X6P/W5X/uyyLKVAAAAAElFTkSuQmCC" />
@@ -54,7 +57,7 @@
     </div>
     <div id="main">
         <div id="main_container">
-            <div id="main_info">
+            <div id="main_info" class="wow animate__bounceInDown">
                 <h1>
                     Самая вкусная пицца в мире 
                     <span>только в Pizza Cheff</span>
@@ -109,11 +112,11 @@
                         </div>
                     </div>
                 </div>
-                <div id="advantage_button" >
-                    <a href="#" class="btn">Выбрать пиццу</a>
+                <div id="advantage_button">
+                    <a href="#" class="btn hvr-bounce-to-left">Выбрать пиццу</a>
                 </div>
             </div>
-            <div id="main_img">
+            <div id="main_img" class="wow animate__backInRight">
                 <img src="./images/main/pizza_big.png" alt="">
             </div>
         </div>
@@ -121,23 +124,23 @@
     <div id="products">
         <div id="products_container">
             <div id="products_title">Выберите свою любимую пиццу</div>
-            <div id="products_list">
+            <div id="products_list"  class="wow animate__fadeInLeft">   
                 <div class="products_item">
                     <div class="products_item_img">
-                        <img src="./images/products/Meat_DeLuxe.png" alt="">
+                    <a class="test-popup-link" href="./images/products/Meat_DeLuxe.png"> <img src="./images/products/Meat_DeLuxe.png" alt=""></a>
                     </div>
                     <div class="products_item_title">
                         Мясная Делюкс
                     </div>
                     <div class="div products_item_desription">
                         Пепперони, лук, бекон, томатная паста, колбаски, перец,
-                        грибы, соус чили, ананасы 
+                        грибы, соус чили, ананасы
                     </div>
-                    <button class="products_item_button btn">В корзину</button>
-                </div>
+                    <button class="products_item_button btn hvr-shutter-out-vertical">В корзину</button>
+                </div>       
                 <div class="products_item">
                     <div class="products_item_img">
-                        <img src="./images/products/Marine_Premium.png" alt="">
+                        <a class="test-popup-link" href="./images/products/Marine_Premium.png"><img src="./images/products/Marine_Premium.png" alt=""></a>
                     </div>
                     <div class="products_item_title">
                         Морская Премиум
@@ -145,11 +148,11 @@
                     <div class="div products_item_desription">
                         Перец, сыр, креветки, кальмары, мидии, лосось
                     </div>
-                    <button class="products_item_button btn">В корзину</button>
+                    <button class="products_item_button btn hvr-shutter-out-vertical">В корзину</button>
                 </div>
                 <div class="products_item">
                     <div class="products_item_img">
-                        <img src="./images/products/Bacon_Sausages.png" alt="">
+                        <a class="test-popup-link" href="./images/products/Bacon_Sausages.png"><img src="./images/products/Bacon_Sausages.png"alt=""></a>
                     </div>
                     <div class="products_item_title">
                         Бекон и Сосиски
@@ -157,11 +160,11 @@
                     <div class="div products_item_desription">
                         Бекон, сыр, сосиски, ананас, томатная паста
                     </div>
-                    <button class="products_item_button btn">В корзину</button>
+                    <button class="products_item_button btn hvr-shutter-out-vertical">В корзину</button>
                 </div>
                 <div class="products_item">
                     <div class="products_item_img">
-                        <img src="./images/products/Chicken_DeLuxe.png" alt="">
+                        <a class="test-popup-link" href="./images/products/Chicken_DeLuxe.png"><img src="./images/products/Chicken_DeLuxe.png"alt=""></a>
                     </div>
                     <div class="products_item_title">
                         Куриная Делюкс
@@ -169,11 +172,11 @@
                     <div class="div products_item_desription">
                         Курица, ананас, сыр Пепперони, соус для пиццы, томатная паста
                     </div>
-                    <button class="products_item_button btn">В корзину</button>
+                    <button class="products_item_button btn hvr-shutter-out-vertical">В корзину</button>
                 </div>
                 <div class="products_item">
                     <div class="products_item_img">
-                        <img src="./images/products/BBQ_Premium.png" alt="">
+                        <a class="test-popup-link" href="./images/products/BBQ_Premium.png"><img src="./images/products/BBQ_Premium.png" alt=""></a>
                     </div>
                     <div class="products_item_title">
                         Барбекю Премиум
@@ -182,11 +185,11 @@
                         Свинина BBQ, соус Барбкею, сыр, курица, соус для пиццы, 
                         соус чили
                     </div>
-                    <button class="products_item_button btn">В корзину</button>
+                    <button class="products_item_button btn hvr-shutter-out-vertical">В корзину</button>
                 </div>
                 <div class="products_item">
                     <div class="products_item_img">
-                        <img src="./images/products/Pepperoni double.png" alt="">
+                        <a class="test-popup-link" href="./images/products/Pepperoni double.png"><img src="./images/products/Pepperoni double.png" alt=""></a>
                     </div>
                     <div class="products_item_title">
                         Пепперони Дабл
@@ -194,11 +197,11 @@
                     <div class="div products_item_desription">
                         Пепперони, сыр, колбаса 2 видов: обжаренная и вареная
                     </div>
-                    <button class="products_item_button btn">В корзину</button>
+                    <button class="products_item_button btn hvr-shutter-out-vertical">В корзину</button>
                 </div>
                 <div class="products_item">
                     <div class="products_item_img">
-                        <img src="./images/products/Chicken_Trio.png" alt="">
+                        <a class="test-popup-link" href="./images/products/Chicken_Trio.png"><img src="./images/products/Chicken_Trio.png" alt=""></a>
                     </div>
                     <div class="products_item_title">
                         Куриное трио
@@ -207,11 +210,11 @@
                         Жареная курица, Тушеная курица, Куриные наггетсы, 
                         перец, сыр, грибы, соус для пиццы
                     </div>
-                    <button class="products_item_button btn">В корзину</button>
+                    <button class="products_item_button btn hvr-shutter-out-vertical">В корзину</button>
                 </div>
                 <div class="products_item">
                     <div class="products_item_img">
-                        <img src="./images/products/Cheese.png" alt="">
+                        <a class="test-popup-link" href="./images/products/Cheese.png"><img src="./images/products/Cheese.png" alt=""></a>
                     </div>
                     <div class="products_item_title">
                         Сырная
@@ -219,7 +222,7 @@
                     <div class="div products_item_desription">
                         Сыр Джюгас, Сыр с плесенью, Сыр Моцарелла, Сыр секретный
                     </div>
-                    <button class="products_item_button btn">В корзину</button>
+                    <button class="products_item_button btn hvr-shutter-out-vertical">В корзину</button>
                 </div>
             </div>
         </div>
@@ -227,7 +230,7 @@
     <div id="order">
         <div id="order_container">
             <div id="order_info">
-                <div id="order_info_title">
+                <div id="order_info_title" class="wow animate__swing">
                    <span>Хватит думать!</span> Доставим заказ за 30 минут!
                 </div>
                 <div id="order_info_text">
@@ -238,11 +241,11 @@
                     доволен и не остался голодный!
                 </div>
             </div>
-            <div id="order_form">
+            <div id="order_form" class="wow animate__pulse">
                 <input type="text" placeholder="Ваше имя" >
                 <input type="text" placeholder="Адрес доставки">
                 <input type="text" placeholder="Телефон">
-                <button class="btn">Оформить заказ</button>
+                <button href="#test-popup" class="btn hvr-shutter-out-vertical open-popup-link">Оформить заказ</button>
             </div>
             <div id="order_img">
                 <img src="./images/order/order_pizzzzza.png" alt="">
@@ -261,6 +264,9 @@
         </div>
     </div>
 
+    <div id="test-popup" class="white-popup mfp-hide">
+    "Спасибо за заказ. Мы свяжемся с вами в ближайшее время!"
+    </div>
     <script>
         document.getElementById('burger_menu').onclick = function () {
             document.getElementById('header_menu_list').classList.add('open');
@@ -271,5 +277,26 @@
             }
         })
     </script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.magnific-popup.js"></script>
+    <script>
+        $(document).ready(function () {
+            new WOW({
+                animateClass: 'animate__animated'
+            }).init();
+            $('.open-popup-link').magnificPopup({
+                type: 'inline',
+                midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+            });
+            $('.test-popup-link').magnificPopup({
+            type: 'image'
+            // other options
+            });
+        });
+        
+    </script>
+    
+    
 </body>
 </html>
