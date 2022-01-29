@@ -242,10 +242,10 @@
                 </div>
             </div>
             <div id="order_form" class="wow animate__pulse">
-                <input type="text" placeholder="Ваше имя" >
-                <input type="text" placeholder="Адрес доставки">
-                <input type="text" placeholder="Телефон">
-                <button href="#test-popup" class="btn hvr-shutter-out-vertical open-popup-link">Оформить заказ</button>
+                <input type="text" placeholder="Ваше имя" id="order_input_name">
+                <input type="text" placeholder="Адрес доставки" id="order_input_address">
+                <input type="text" placeholder="Телефон" id="order_input_phone">
+                <button class="btn" type="button" id="order_form__button">Оформить заказ</button>
             </div>
             <div id="order_img">
                 <img src="./images/order/order_pizzzzza.png" alt="">
@@ -264,9 +264,9 @@
         </div>
     </div>
 
-    <div id="test-popup" class="white-popup mfp-hide">
+    <!-- <div id="test-popup" class="white-popup mfp-hide">
     "Спасибо за заказ. Мы свяжемся с вами в ближайшее время!"
-    </div>
+    </div> -->
     <script>
         document.getElementById('burger_menu').onclick = function () {
             document.getElementById('header_menu_list').classList.add('open');
@@ -277,9 +277,12 @@
             }
         })
     </script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/wow.min.js"></script>
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/jquery.magnific-popup.js"></script>
+    <script src="/js/main.js"></script>
+
     <script>
         $(document).ready(function () {
             new WOW({
