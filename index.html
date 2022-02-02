@@ -242,10 +242,30 @@
                 </div>
             </div>
             <div id="order_form" class="wow animate__pulse">
-                <input type="text" placeholder="Ваше имя" id="order_input_name">
-                <input type="text" placeholder="Адрес доставки" id="order_input_address">
-                <input type="text" placeholder="Телефон" id="order_input_phone">
-                <button class="btn" type="button" id="order_form__button">Оформить заказ</button>
+                <form action="">
+                    <div>
+                    <input type="text" placeholder="Ваше имя" id="order_input_name" class="order_form_control">
+                        <div class="order_input_error">
+                            "Необходимо ввести Ваше имя"
+                        </div>
+                    </div>
+                    <div>
+                    <input type="text" placeholder="Адрес доставки" id="order_input_address" class="order_form_control">
+                        <div class="order_input_error">
+                            "Необходимо ввести адрес доставки"
+                        </div>
+                    </div>
+                    <div>
+                    <input type="text" placeholder="Телефон" id="order_input_phone" class="order_form_control">
+                        <div class="order_input_error">
+                            "Необходимо ввести Ваш телефон"
+                        </div>
+                    </div>
+                    <button type="button" class="btn" id="order_form__button">Оформить заказ</button>
+                </form>
+            </div>
+            <div id="order_form_success">
+                <p id="order_form_success_text">"Спасибо за Ваш заказ.</br>Мы скоро свяжемся с Вами!"</p>
             </div>
             <div id="order_img">
                 <img src="./images/order/order_pizzzzza.png" alt="">
@@ -263,7 +283,9 @@
             </div>
         </div>
     </div>
-
+    <div id="loader">
+        <div class="lds-hourglass"></div>
+    </div>
     <!-- <div id="test-popup" class="white-popup mfp-hide">
     "Спасибо за заказ. Мы свяжемся с вами в ближайшее время!"
     </div> -->
@@ -281,7 +303,7 @@
     <script src="./js/wow.min.js"></script>
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/jquery.magnific-popup.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="./js/main.js"></script>
 
     <script>
         $(document).ready(function () {
