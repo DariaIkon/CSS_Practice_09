@@ -4,36 +4,34 @@
     let loader = $('#loader');
     $('#order_form__button').click(function () {
         console.log('тык');
-        
-        $('.order_input_error').hide();
         let name = $('#order_input_name');
         let address = $('#order_input_address');
         let phone = $('#order_input_phone');
         let hasError = false;
-        let orderInput = $('.order_form_control');
-        let orderForm = $('#order_form')
+        let orderForm = $('#order_form');
+
+
+        $('.order_input_error').hide().css({ 'position': 'absolute', 'top': '70px' });
+        $('.order_form_control').css('border', '1px solid rgb(185, 145, 80)');
 
         if (!name.val()) {
             name.siblings('.order_input_error').show();
-             orderInput.css({
+            $(name).css({
                 'border': '1px solid red',
-                'margin-bottom': '5px'
             })
             hasError = true;
-        }
+        } 
         if (!address.val()) {
             address.siblings('.order_input_error').show();
-             orderInput.css({
+             $(address).css({
                 'border': '1px solid red',
-                'margin-bottom': '5px'
             })
             hasError = true;
-        }
+        } 
         if (!phone.val()) {
             phone.siblings('.order_input_error').show();
-            orderInput.css({
+            $(phone).css({
                 'border': '1px solid red',
-                'margin-bottom': '5px'
             });
             hasError = true;
         }

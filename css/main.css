@@ -236,6 +236,9 @@ body {
   outline: 0;
   margin-bottom: 24px;
 }
+.order_input_wrapper {
+  position: relative;
+}
 #order_form input::placeholder {
   color: rgb(203, 168, 110);
 }
