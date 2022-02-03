@@ -270,8 +270,8 @@ body {
   height: 350px;
 }
 #order_form_success_text {
-  font-size: 15px;
-  color: black;
+  font-size: 24px;
+  color: rgb(185, 145, 80);
   margin: 0 auto;
 }
 
